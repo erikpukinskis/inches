@@ -1,9 +1,8 @@
 var library = require("module-library")(require)
 
-library.export(
+module.exports = library.export(
   "inches",
   function() {
-
     function inches(number, options) {
       var integer = Math.floor(number)
       var remainder = number - integer
@@ -23,17 +22,12 @@ library.export(
         var fraction = sixteenths+"/16"
       }
 
-      if (fraction) {
-        fraction += "&Prime;"
-      }
-
       if (integer == 0 && sixteenths != 0) {
-        var string = fraction
-      } else {
+        var string = fraction+"&prime;"
+      } else if (sixteenths == 0) {
         var string = integer.toString()+"&prime;"
-        if (fraction) {
-          string += "&nbsp;"+fraction
-        }
+      } else {
+        var string = integer.toString() +"&nbsp;"+fraction+"&prime;"
       }
 
       return string
