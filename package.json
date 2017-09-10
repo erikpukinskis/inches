@@ -1,0 +1,13 @@
+{
+  "name": "inches",
+  "version": "0.0.0",
+  "description": "Describe a float in terms of inches and feet",
+  "main": "inches.js",
+  "dependencies": {
+    "module-library": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikpukinskis/inches.git"
+  }
+}
