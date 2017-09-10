@@ -1,6 +1,6 @@
 {
   "name": "inches",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Describe a float in terms of inches and feet",
   "main": "inches.js",
   "dependencies": {
